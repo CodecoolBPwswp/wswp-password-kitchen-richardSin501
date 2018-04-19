@@ -33,5 +33,10 @@ def verify_pw():
     return render_template('index.html', state=state)
 
 
+@app.route('test')
+def test():
+    return "pass"
+
+
 if __name__ == '__main__':
     app.run()
